@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contacto — [Uriel calderon espinoza]</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Contacto</h1>
+      <nav id="main-nav" class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Sobre Mí</a>
+        <a href="projects.html">Proyectos</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="contact-section">
+      <h2>Contáctame</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Nombre Completo</label>
+        <input id="name" name="name" type="text" required minlength="3">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+        <button type="submit">Enviar</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> [Uriel calderon espinoza]</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
